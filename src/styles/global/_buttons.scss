@@ -1,0 +1,33 @@
+@use "./colors" as *;
+@use "./typography" as *;
+
+
+.button-red{
+    width: 10rem;
+    height: 6rem;
+    transform: skew(-10deg);
+    transform: skew(-10deg);
+    transform: skew(-10deg);
+    background: $bt-g-red;
+    div{
+        transform: skew(+10deg);
+        transform: skew(+10deg);
+        transform: skew(+10deg);
+        font-family: $text-font;
+        color: $text-gray;
+        
+    }
+}
+
+.button-gray{
+    width: 10rem;
+    height: 6rem;
+    transform: skew(-10deg);
+    background: $bt-g-gray;
+    div{
+        transform: skew(+10deg);
+        font-family: $text-font;
+        color: $text-gray;
+        
+    }
+}

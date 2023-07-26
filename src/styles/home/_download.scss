@@ -1,0 +1,199 @@
+@use '../global' as *;
+
+.download-section{
+    background: $bg-gray-light;
+    .container{
+        .content{
+            padding: 10rem 0;
+            .download-box{
+                position: relative;
+                max-width: 80rem;
+                background-color: #fff;
+                padding: 5rem 10rem;
+                box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+                .phone-img{
+                    position: absolute;
+                    width: 18rem;
+                    height: 37rem;
+                    border: 10px solid black;
+                    border-radius: 40px;
+                    background-image: url('src/images/phone.png');
+                    background-color: #757272;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    right: 8rem;
+                    top: -5rem;
+                }
+                .box-content{
+                    max-width: 30rem;
+                    h2{
+                        font-size: 3rem;
+                        line-height: 1.5;
+                        span{
+                            font-weight: 400;
+                        }
+                    }
+                    p{
+                        color: $text-gray-dark;
+                        padding: 2rem 0;
+                        font-size: 1.2rem;
+                    }
+                    .download-btns{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1rem;
+                        .btn-google,.btn-apple{
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 2px solid #000;
+                            border-radius: 9999px;
+                            background-color: rgba(0, 0, 0, 1);
+                            padding: 0.625rem 1.5rem;
+                            text-align: center;
+                            color: rgba(255, 255, 255, 1);
+                            outline: 0;
+                            transition: all  .2s ease;
+                            text-decoration: none;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: transparent;
+                                color: rgba(0, 0, 0, 1);
+                        }
+                            
+                            .download-icon{
+                                height: 2rem;
+                                width: 2rem;
+                                font-size: 2rem;
+                            }
+                            .texts{
+                                margin-left: 1rem;
+                                display: flex;
+                                align-items: flex-start;
+                                flex-direction: column;
+                                line-height: 1;
+                                .text-1{
+                                    margin-bottom: 0.25rem;
+                                    font-size: 0.75rem;
+                                    line-height: 1rem;
+                                }
+                                .text-2{
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_xxl) {
+.download-section{
+    .container{
+        .content{
+            .download-box{
+                .phone-img{
+                    right: 4rem;
+                    top: -5rem;
+                }
+            }
+        }
+    }
+}
+}
+
+@media (max-width: $breakpoint_xl) {
+    .download-section{
+        .container{
+            .content{
+                .download-box{
+                    .phone-img{
+                        width: 15rem;
+                        height: 32rem;
+                        right: 3rem;
+                        top: -3rem;
+                    }
+                    .box-content{
+                        h2{
+                            font-size: 2.5rem;
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+
+    @media (max-width: 942px) {
+        .download-section{
+            .container{
+                .content{
+                    .download-box{
+                        padding: 5rem 4rem;
+                        .phone-img{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        }
+
+        @media (max-width: $breakpoint_md) {
+            .download-section{
+                .container{
+                    .content{
+                        .download-box{
+                            padding: 5rem 2rem;
+                            .box-content{
+                                h2{
+                                    font-size: 2.5rem;
+                                    
+                                }
+                                p{
+                                    font-size: 1rem;
+                                }
+                                .download-btns{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            }
+
+            @media (max-width: $breakpoint_sm) {
+                .download-section{
+                    .container{
+                        padding: 0 20px;
+                        .content{
+                            .download-box{
+                                padding: 5rem 2rem;
+                                .box-content{
+                                    h2{
+                                        font-size: 2.5rem;
+                                        text-align: center;
+                                        line-height: 1.2;
+                                    }
+                                    p{
+                                        font-size: 1rem;
+                                        text-align: center;
+                                    }
+                                    .download-btns{
+                                        flex-direction: column;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                }
+
+        

@@ -1,0 +1,117 @@
+@use '../global' as *;
+
+
+.book-car{
+    background: $bg-gray-light;
+    .container{
+        .content{
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            .book-content__box{
+                background-color: #fff;
+                h2{
+                    padding-bottom: 2rem;
+                }
+                padding: 4rem 4.5rem 5rem 5.5rem;
+                box-shadow: 0 10px 20px 0 rgb(0 0 0 / 10%);
+                .box-form{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: auto auto auto;
+                    gap: 2rem;
+                    .box-form__content{
+                        display: flex;
+                        flex-direction: column;
+                        label{
+                            display: flex;
+                            align-items: center;
+                            font-weight: 600;
+                            margin-bottom: 1.2rem;
+                            b{
+                                color: red;
+                                padding-left: 4px;
+                            }
+                            .label-icon{
+                                color: $text-red;
+                                font-size: 1.2rem;
+                            }
+                        }
+                        select {
+                            font-size: 1rem;
+                            color: #ababab;
+                            border: 1px solid #ccd7e6;
+                            font-weight: 400;
+                            padding: 0.7rem 1.3rem;
+                            outline: none;
+                          }
+                        input{
+                            outline: none;
+                            border: 1px solid #ccd7e6;
+                            padding: 0.9rem 1.3rem;
+                            color: #ababab;
+                            font-weight: 400;
+                        }
+                       
+                    }
+                    button{
+                        padding: 0.75rem 1.3rem;
+                        height: fit-content;
+                        align-self: self-end;
+                        border: none;
+                        font-family: $text-font;
+                        font-size: 1.2rem;
+                        color: white;
+                        background: $bt-g-red;
+                        cursor: pointer;
+                        transition: all 0.3s;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media (max-width: $breakpoint_xl) {
+    .book-car{
+        .container{
+            .content{
+                .book-content__box{
+                    .box-form{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: auto auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_md) {
+    .book-car{
+        .container{
+            .content{
+                .book-content__box{
+                    .box-form{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_md) {
+    .book-car{
+        .container{
+            padding: 0 20px;
+            .content{
+                .book-content__box{
+                    padding: 4rem 1.5rem 5rem 1.5rem;
+                }
+            }
+        }
+    }
+}

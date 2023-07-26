@@ -1,0 +1,189 @@
+@use '../global' as *;
+
+
+
+.main-section{
+    background: $bg-gray;
+    .container{
+        position: relative;
+        .content{
+            display: flex;
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            .text-section{
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                h1{
+                    font-family: $titles-font;
+                    font-size: 3.5rem;
+                    letter-spacing: 4px;
+                    word-spacing: 4px;
+                    line-height: 1.1;
+                    margin-bottom: 1rem;
+                    background: $t-g-gray;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    span{
+                        background: $t-g-red;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+                p{
+                    font-family: $text-font;
+                    font-size: 1.3rem;
+                    color: #ded9d9;
+                }
+                .text-section__buttons{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;      
+                    .button-red{
+                        z-index: 2;
+                    }
+                }
+            }
+            .picture-section{
+                display: flex;
+                align-items: end;
+                flex-direction: column;
+                
+                h1{
+                    font-family: $titles-font-p;
+                    margin-bottom: 1rem;
+                    font-size: 2rem;
+                    background: $t-g-gray;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                p{
+                    max-width: 60%;
+                    font-family: $text-font;
+                    font-size: 0.8rem;
+                    color: #ded9d9;
+                    text-indent: 5em;
+                    margin-bottom: 1rem;
+                    text-align: right;
+                }
+                img{
+                    max-width: 70%;
+                    transform: scale(-1, 1);
+                    right: 0;
+                    top: 10rem
+                }
+                table{
+                    text-align: right;
+                    font-family: $text-font;
+                    font-size: 0.8rem;
+                    width: 80%; 
+                    border-collapse: collapse;
+                    thead{
+                        .table-item{
+                            color: $text-gray;
+                        }
+                    }
+                    tbody{
+                        .table-content{
+                            color: $text-gray-dark;
+                           
+                        }
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: $breakpoint_xxl) {
+    .main-section{
+        .container{
+            .content{
+                .text-section{
+                    gap: 2rem;
+                    h1{
+                        font-size: 3rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+                .picture-section{
+                    p{
+                        font-size: 0.7rem;
+                    }
+                    table{
+                        border-spacing: 3rem 0.5rem;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}
+
+@media (max-width: $breakpoint_xl) {
+.main-section{
+    .container{
+        .content{
+            flex-direction: column;
+            height: auto;
+            .text-section{
+                h1{
+                    text-align: center;
+                }
+            }
+            .picture-section{
+                display: none;
+            }
+        }
+    }
+}
+    
+}
+
+@media (max-width: $breakpoint_md) {
+
+    .main-section{
+        .container{
+            .content{
+                .text-section{
+    
+                }
+                .picture-section{
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_sm) {
+    .main-section{
+        .container{
+            .content{
+                .text-section{
+                    h1{
+                        font-size: 2rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

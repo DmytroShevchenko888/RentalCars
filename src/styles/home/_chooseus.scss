@@ -1,0 +1,159 @@
+@use '../global' as *;
+
+.chooseus-section{
+    background: $bg-gray;
+    .container{
+        .content{
+            padding-top: 10rem;
+            .chooseus-content{
+                display: flex;
+                justify-content: space-around;
+                .chooseus-img{
+                }
+                .chooseus-servise{
+                    width: 40%;
+                    .chooseus-title{
+                        h3{
+                            font-size: 1rem;
+                            text-transform: uppercase;
+                            color: $text-gray-dark;
+                            font-weight: 200;
+                            padding-bottom: 1.3rem;
+                        }
+                        h1{
+                            font-size: 2rem;
+                            padding-bottom: 4rem;
+                            color: #fff;
+                        }
+                    }
+                    .servise-cards{
+                        display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: auto;
+                            grid-gap: 4rem;
+                        .card{
+                            display: flex;
+                            align-items: start;
+                            .icon-box{
+                                padding: 20px;
+                                background: $bt-g-red;
+                                transform: skew(-5deg);
+                                .card-icon{
+                                    transform: skew(5deg);
+                                    font-size: 3rem;
+                                    color: $text-gray;
+                                }
+                            }
+                            &:nth-child(2){
+                                .icon-box{
+                                    background: $bt-g-gray;
+                                } 
+                            }
+                            .card-info{
+                                padding-left: 2rem;
+                                h3{
+                                    padding-bottom: 1rem;
+                                    color: #fff;
+                                }
+                                p{
+                                    color: $text-gray-dark;
+                                }
+                            }
+                        }
+ 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_xl) {
+    .chooseus-section{
+        .container{
+            padding: 0 20px;
+            .content{
+                .chooseus-content{
+                    .chooseus-img{
+                        max-width: 25rem;
+                    }
+                    .chooseus-servise{
+                        width: 50%;
+                        .servise-cards{
+                           
+                            .card{
+
+     
+                                .card-info{
+                                   
+                                }
+                            }
+     
+                        }
+                }
+                
+                }
+            }
+        }
+    }
+    }
+
+@media (max-width: $breakpoint_md) {
+.chooseus-section{
+    .container{
+        .content{
+            padding-bottom: 10rem;
+            .chooseus-content{
+                .chooseus-img{
+                    display: none;
+                }
+                .chooseus-servise{
+                    width: 100%;
+                    .chooseus-title{
+                        h3{
+                            text-align: center;
+                        }
+                        h1{
+                            text-align: center;
+                        }
+                    }
+                    .servise-cards{
+                        display: grid;
+                            grid-template-columns: 1fr;
+                            grid-template-rows: auto;
+                            grid-gap: 4rem;
+                        .card{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            .icon-box{
+                                background: $bt-g-red;
+                                transform: skew(-5deg);
+                                .card-icon{
+                                    transform: skew(5deg);
+                                    font-size: 3rem;
+                                    color: $text-gray;
+                                }
+                            }
+                            .card-info{
+                                padding-left: 0;
+                                h3{
+                                    padding-top: 1rem;
+                                    padding-bottom: 1rem;
+                                    text-align: center;
+                                }
+                                p{
+                                    text-align: center;
+                                }
+                            }
+                        }
+ 
+                    }
+            }
+            
+            }
+        }
+    }
+}
+}

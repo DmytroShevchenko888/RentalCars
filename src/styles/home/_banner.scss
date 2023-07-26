@@ -1,0 +1,196 @@
+@use '../global' as *;
+.banner-section{
+    background: $bg-gray-light;
+    .container{
+        .content{
+            padding-top: 10rem;
+            padding-bottom: 10rem;
+            display: flex;
+            justify-content: center;
+            .banner-content{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                background: $bt-g-gray;
+                border: 6px solid black;
+                transform: skew(-10deg);
+                max-width: 80%;
+                padding: 5rem;
+                .banner-img{
+                    position: absolute;
+                    bottom: -4rem;
+                    left: -11rem;
+                    transform: skew(10deg);
+                    max-width: 30rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .banner-title{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-left: 14rem;
+                    h1{
+                        font-size: 2rem;
+                        color: #fff;
+                        text-align: center;
+                        transform: skew(10deg);
+                    }
+                    h3{
+                        font-size: 1.2rem;
+                        color: $text-gray;
+                        transform: skew(10deg);
+                        text-align: center;
+                        span{
+                            color: $text-red;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+@media (max-width: $breakpoint_xxl) {
+    .banner-section{
+        .container{
+            .content{
+                .banner-content{
+                    max-width: 60%;
+                    padding: 2.5rem;
+                    .banner-img{
+                        bottom: -3rem;
+                        max-width: 25rem;
+                    }
+                    .banner-title{
+                        padding-left: 12rem;
+                        h1{
+                            font-size: 1.8rem;
+                            padding-bottom: 1rem;
+                        }
+                        h3{
+                            font-size: 1rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_xl) {
+    .banner-section{
+        .container{
+            .content{
+                justify-content: flex-end;
+                .banner-content{
+                    max-width: 75%;
+                    margin-right: 3rem;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 924px) {
+    .banner-section{
+        .container{
+            .content{
+                .banner-content{
+                    .banner-title{
+                        h1{
+                            font-size: 1.5rem;
+                            text-shadow: 3px 0 1px #000, 
+                        }
+                        h3{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint_md) {
+    .banner-section{
+        .container{
+            .content{
+                padding-top: 15rem;
+                justify-content: center;
+                .banner-content{
+                    max-width: 100%;
+                    padding-top: 6rem;
+                    padding-bottom: 5rem;
+                    transform: skew(0);
+                    margin-right: 0;
+                    align-items: center;
+                    .banner-img{
+                        position: static;
+                        margin-top: -250px;
+                        max-width: 25rem;
+                        transform: skew(0);
+                    }
+                    .banner-title{
+                        padding-left: 0;
+                        h1{
+                            font-size: 1.8rem;
+                            padding-bottom: 1rem;
+                            transform: skew(0);
+                        }
+                        h3{
+                            font-size: 1rem;
+                            transform: skew(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: $breakpoint_sm) {
+    .banner-section{
+        .container{
+            padding: 0 20px;
+            .content{
+                .banner-content{
+                    .banner-img{
+                        max-width: 100%;
+                        margin-top: -200px;
+                    }
+                    .banner-title{
+                        h1{
+                            font-size: 1.5rem;
+                        }
+                        h3{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .banner-section{
+        .container{
+            padding: 0 20px;
+            .content{
+                .banner-content{
+                    .banner-img{
+                        left: 0; right: 0; top: -8rem; bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

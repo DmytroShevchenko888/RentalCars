@@ -1,0 +1,142 @@
+@use '../global' as *;
+
+.nav-bar{
+    position: absolute;
+    width: 100%;
+    z-index: 50;
+    .container{ 
+        .nav-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem 0;
+            .logo{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 4rem;
+                }
+                .logo-title{
+                    padding-left: 8px;
+                    color: $text-gray;
+                    div:first-child{
+                        font-weight: 800;
+                    }
+                }
+            }
+            .nav-menu{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                gap: 3rem;
+                list-style: none;
+                a{
+                    font-family: $text-font;
+                    color: $text-gray;
+                    text-decoration: none;
+                    transition: all 0.3s;
+                    &:hover{
+                        color: $text-red;
+                    }
+                }
+                
+            }
+            .nav-register{
+                display: flex;
+                .button-red{
+                    margin-right: 3rem;
+                    white-space: nowrap;
+                    height: 2.7rem;
+                    width: 6rem;
+                }
+                .button-gray{
+                    height: 2.7rem;
+                    width: 6rem;
+                }
+            }
+        }
+        
+        .logo-mobile{
+            display: none;
+        }
+        .mobile-btn{
+            display: none;
+        }
+    }
+}
+
+@media (max-width:$breakpoint_xl) {
+    .nav-bar{
+        .container{ 
+            .nav-content{
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                left: -100%;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                z-index: 10;
+                width: 100%;
+                height: 100vh;
+                background: $bg-gray;
+                transition: left 1s;
+                gap: 2rem;
+                .nav-register{
+                    padding-left: 30px;
+                }
+                .logo{
+                    position: absolute;
+                    top: 20px;
+                    left: 30px;
+                }
+                .nav-menu{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2.7rem;
+                }
+              
+              
+            }
+            .active{
+                left: 0;
+            }
+            .logo-mobile{
+                cursor: pointer;
+                position: absolute;
+                left: 30px;
+                top: 10px;
+                display: flex;
+                align-items: center;
+                img{
+                    width: 4rem;
+                }
+                .logo-title{
+                    padding-left: 8px;
+                    color: $text-gray;
+                    div:first-child{
+                        font-weight: 800;
+                    }
+                }
+            }
+            .mobile-btn{
+                display: block;
+                position: absolute;
+                right: 40px;
+                top: 30px;
+                font-size: 1.5rem;
+                cursor: pointer;
+                z-index: 10;
+                color: $text-gray;
+                transition: all 0.3s;
+                &:hover{
+                    color: $text-red;
+                }
+            }
+            
+        }
+    }
+}

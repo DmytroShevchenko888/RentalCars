@@ -1,0 +1,19 @@
+// background colors
+$bg-gray: linear-gradient(9deg, rgba(47,43,43,1) 0%, rgba(84,84,87,1) 35%, rgba(25,26,27,1) 100%);
+$bg-white: #ffffff;
+$bg-gray-light: #f8f8f8;
+
+// text color
+$text-black: #010103;
+$text-red: #8A0E0C;
+$text-gray: #ded9d9;
+$text-gray-dark: #9a9898;
+
+// text color gradient
+$t-g-gray: linear-gradient( to bottom, #bcc6cc, #eee, #bcc6cc);
+$t-g-red: radial-gradient(circle farthest-corner at center center, #CC0C0C 0%, #8A0E0C 100%);
+
+//buttons color gradient
+$bt-g-red: linear-gradient( to bottom, #a70606, #830303, #600000);
+$bt-g-gray:linear-gradient( to bottom, #8b9398, #838282, #54595b);
+$bt-g-gold:linear-gradient( to bottom, #c39738, #deb761, #c39738);
