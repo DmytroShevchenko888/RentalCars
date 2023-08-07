@@ -1,0 +1,97 @@
+@use "../global" as *;
+
+.global-banner{
+    background-image: url("/src/images/gtr.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__overlay{
+        background-color: #2d2d2d;
+        opacity: 0.89;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .container{
+        z-index: 5;
+        width: 100%;
+        .text-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            h2{
+                color: #fff;
+                font-size: 1.8rem;
+            }
+            span{
+                display: flex;
+                align-items: center;
+                h3{
+                    color: #fff;
+                    font-size: 1.5rem;
+                    margin-left: 1rem;
+                    white-space: nowrap;
+                    b{
+                        color: $text-red;
+                        padding: 0 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:$breakpoint_md) {
+    .global-banner{
+        .container{
+            .text-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                h2{
+                    color: #fff;
+                    font-size: 1.8rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:$breakpoint_sm) {
+    .global-banner{
+        .container{
+            .text-content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                h2{
+                    color: #fff;
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+                span{
+                    h3{
+                        color: #fff;
+                        font-size: 1.2rem;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

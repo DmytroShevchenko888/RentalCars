@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { CAR_DATA } from '../CarData'
+import {CAR_DATA} from "../CarData"
 import {FaCalendarAlt, FaCar, } from 'react-icons/fa'
 import {FaLocationDot} from 'react-icons/fa6'
 
@@ -21,15 +20,14 @@ function BookCar() {
                 <select>
                   <option value="">Select your car type</option>
                   {CAR_DATA.map((cars,index) => (
-                    <div key={index}>
+                    <option key={index}>
                     {cars.map((car)=>(
                       <option value="" key={car.id}>{car.name}</option>
                     ))}
-                    </div>
+                    </option>
                   ))}
                 </select>
               </div>
-
               <div className="box-form__content">
                 <label>
                   <FaLocationDot className='label-icon'/>

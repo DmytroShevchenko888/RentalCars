@@ -1,0 +1,10 @@
+<svg width="70" height="43" viewBox="0 0 70 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42 42.5V40H44.5V42.5H42Z" fill="#8A0E0C"/>
+<path d="M56 42.5V40H58.5V42.5H56Z" fill="#8A0E0C"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M39.5 40H42H44.5H56H58.5H61V31L58 23.5H43L39.5 31.5V40ZM44.5 25.5L42.5 30H58.5L56.5 25.5H44.5ZM44.5 34H42V36.5H44.5V34ZM46.5 36.5V34H54V36.5H46.5ZM56 36.5V34H58.5V36.5H56Z" fill="#8A0E0C"/>
+<path d="M3 4H40V6H3V4Z" fill="#8A0E0C" fill-opacity="0.86"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37 6H6V41H16V27H28V41H37V6ZM30 18H27V24H30V18ZM20 18H23V24H20V18ZM16 18H13V24H16V18ZM13 9H16V15H13V9ZM23 9H20V15H23V9ZM27 9H30V15H27V9Z" fill="#8A0E0C" fill-opacity="0.86"/>
+<path d="M17 41H27V28H17V41Z" fill="#8A0E0C" fill-opacity="0.86"/>
+<rect x="37" y="17" width="30" height="3" fill="#8A0E0C"/>
+<rect x="64" y="20" width="3" height="21" fill="#8A0E0C"/>
+</svg>

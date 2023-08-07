@@ -1,0 +1,67 @@
+@use '../global' as *;
+
+.our-team{
+    background: $bg-gray-light;
+    .container{
+        .content{
+            padding: 10rem 0;
+            .team-cards{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 7rem;
+                .card{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: end;
+                    background-color: #fff;
+                    box-shadow: 10px 6px 15px 0px rgba(0,0,0,0.26);
+                   .card-img{
+                    width: 300px;
+                    
+                    display: table-cell;
+                    vertical-align: bottom;
+                    img{
+                        width: 100%;
+                    }
+                   }
+                   h5{
+                    margin-top: 2rem;
+                    font-size: 1.4rem;
+                   }
+                   p{
+                    margin-top: 1rem;
+                    font-size: 1.1rem;
+                    padding-bottom: 2rem;
+                    color: $text-gray-dark;
+                   } 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:$breakpoint_xl) {
+    .our-team{
+        .container{
+            .content{
+                .team-cards{
+                    .card{
+                       .card-img{
+                        img{
+    
+                        }
+                       }
+                       h5{
+    
+                       }
+                       p{
+                        
+                       } 
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,11 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
 import './styles/styles.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
-import Car_Models from './pages/Car_Models'
+import CarModels from './pages/CarModels'
 import Testimonials from './pages/Testimonials'
-import Our_Team from './pages/Our_Team'
+import OurTeam from './pages/Ourteam'
 import Contact from './pages/Contact'
 
 function App() {
@@ -14,14 +15,15 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route index path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="models" element={<Car_Models />} />
-        <Route path="testimonials" element={<Testimonials />} />
-        <Route path="team" element={<Our_Team />} />
-        <Route path="contact" element={<Contact />} />
-      </Routes>
+        <Routes>
+          <Route index path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="models" element={<CarModels />} />
+          <Route path="testimonials" element={<Testimonials />} />
+          <Route path="team" element={<OurTeam />} />
+          <Route path="contact" element={<Contact />} />
+        </Routes>
+      <Footer/>
     </>
   )
 }

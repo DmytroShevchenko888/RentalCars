@@ -2,9 +2,14 @@ import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import {FaBars, FaTimes} from 'react-icons/fa'
 import carlogo from '../images/carlogo.svg'
+import ModalReg from './ModalReg';
+import ModalSignIn from './ModalSignIn';
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+
+  const [modalReg, setModalReg] = useState(false);
+  const [modalSignIn, setModalSignIn] = useState(false);
 
   const openNav = () => {
     setNav(!nav);
@@ -56,8 +61,18 @@ function Navbar() {
             </li>
           </ul>
           <div className="nav-register">
-            <button onClick={openNav} className='button-gray'><div>Sign in</div></button>
-            <button onClick={openNav} className='button-red'><div>Register</div></button>
+            <button 
+            onClick={() => {
+              setModalSignIn(true);
+              setNav(!nav);
+            }}
+            className='button-gray'><div>Sign in</div></button>
+            <button 
+              onClick={() => {
+                setModalReg(true);
+                setNav(!nav);
+              }}
+            className='button-red'><div>Register</div></button>
           </div>
         </div>
         <Link onClick={openNav} to="/">
@@ -73,7 +88,9 @@ function Navbar() {
         <div onClick={openNav} className='mobile-btn'>
           {!nav ? <FaBars/> : <FaTimes/>} 
         </div> 
-      </div>  
+      </div> 
+      <ModalReg modalReg={modalReg} setModalReg={setModalReg}/> 
+      <ModalSignIn modalSignIn={modalSignIn} setModalSignIn={setModalSignIn} />
     </header>
   )
 }

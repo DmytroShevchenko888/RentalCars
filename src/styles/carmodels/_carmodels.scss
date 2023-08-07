@@ -1,0 +1,81 @@
+@use "../global" as *;
+
+.car-models{
+    background: $bg-gray-light;
+    .container{
+        .content{
+            padding: 10rem 0;
+           .vehicle-cards{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8rem;
+            flex-wrap: wrap;
+            .card{
+                width: 240px;
+                .card-img{
+                    width: 240px;
+                    height: 130px;
+                    display: table-cell;
+                    vertical-align: middle;
+                    transition: all 0.3s;
+                    &:hover{
+                        scale: 1.5;
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+               }
+               .car-title{
+                text-align: center;
+                margin-bottom: 1rem;
+                font-size: 1.1rem;
+               }
+               .car-description{
+                margin-bottom: 2rem;
+                .power, .fuel, .transmission, .type{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 0.5rem;
+                }
+               }
+               .button-red{
+                    width: 100%;
+                    height: 3rem;
+                    div{
+                        font-size: 1.4rem;
+                    }
+               }
+            }
+            
+        }
+    }
+}
+
+@media (max-width:$breakpoint_xl) {
+   .car-models{
+    .container{
+        .content{
+           .vehicle-card{
+            .card-img{
+                img{
+
+                }
+            }
+           }
+           .car-title{
+
+           }
+           .car-description{
+            .power, .fuel, .transmission, .type{
+
+            }
+           }
+           .price{
+            
+           }
+        }
+    }
+}
+}

@@ -1,0 +1,136 @@
+@use '../global' as *;
+
+.about-page{
+    background: $bg-gray-light;
+    .container{
+        .content{
+            margin: 10rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            .about-img{
+                width: 30rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .about-description{
+                max-width: 30rem;
+                h3{
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                }
+                h2{
+                    font-size: 2.5rem;
+                    line-height: 1.1;
+                }
+                p{
+                    color: #706f7b;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    margin-bottom: 2rem;
+                    margin-top: 1rem;
+                    text-align: justify;
+                    
+                }
+                .statistic{
+                    display: flex;
+                    gap: 2rem;
+                    .item{
+                        display: flex;
+                        flex-direction: column;
+                        .item-text{
+                            display: flex;
+                            align-items: center;
+                            margin-top: 1rem; 
+                            h4{
+                                font-size: 3rem;
+                                margin-right: 1rem;
+                                margin-block-start: 0;
+                                margin-block-end: 0;
+                            }
+                            p{
+                                color: #706f7b;
+                                font-size: 1rem;
+                                line-height: 1;
+                                text-align: center;
+                                margin-block-start: 0;
+                                margin-block-end: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:$breakpoint_xl) {
+    .about-page{
+        .container{
+            .content{
+                flex-direction: column;
+                .about-img{
+                    img{
+    
+                    }
+                }
+                .about-description{
+                    h3{
+    
+                    }
+                    h2{
+    
+                    }
+                    p{
+                        
+                    }
+                    .statistic{
+                        .item{
+                            .item-text{
+                                h4{
+    
+                                }
+                                p{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:$breakpoint_sm) {
+    .about-page{
+        .container{
+            padding: 0 20px;
+            .content{
+                .about-img{
+                    max-width: 21rem;
+                }
+                .about-description{
+                    h3{
+                        text-align: center;
+                    }
+                    h2{
+                        text-align: center;
+                    }
+                    p{
+                        
+                    }
+                    .statistic{
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}

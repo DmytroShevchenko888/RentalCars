@@ -25,7 +25,7 @@ function Footer() {
               </li>
               <li>
                 <span className='contact-icons'><FaPhoneAlt/></span>
-                <a href="tel:+38067123456">+38(067)123-456</a>
+                <a href="tel:+380671234567">+38(067)123-45-67</a>
               </li>
               <li>
                 <span><GrMail className='contact-icons'/></span>

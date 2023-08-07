@@ -9,6 +9,7 @@ function Download() {
         <div className="content">
           <div className="download-box">
             <div className="phone-img">
+              <img src={phone} alt="phone-img" />
             </div>
             <div className="box-content">
               <h2>Download the free Rental<span>Cars</span> app</h2>

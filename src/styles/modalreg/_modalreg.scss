@@ -1,0 +1,94 @@
+@use "../global" as *;
+
+.modal-reg{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    .container{
+        .content{
+            padding: 4rem 2rem;
+            background: $bg-gray;
+            transform: scale(0.5);
+            transition: 0.4s all;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title{
+                margin-bottom: 1rem;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: $text-gray;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .field{
+                    margin-top: .5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: .5em;
+                    background: $bg-gray-light;
+                    padding: .5em 1em;
+                    input{
+                        font-size: 1rem;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        color: #d3d3d3;
+                        &:focus::placeholder {
+                            opacity: 0;
+                            transition: opacity .5s;
+                           }
+                    }
+                }
+                label{
+                    margin-top: 1rem;
+                    color: $text-gray;
+                    b{
+                        color: $text-gray;
+                        cursor: pointer;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                    input{
+                        margin-right: 10px;
+                        transform: scale(1.4);
+                    }
+                }
+                .btn{
+                    margin: 1rem;
+                    border: none;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    padding: 0.6em 1.2em;
+                    background: $bt-g-red;
+                    color: $text-gray;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+        .content-active{
+            transform: scale(1);
+        }
+    }
+}
+.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media (max-width:$breakpoint_md) {}

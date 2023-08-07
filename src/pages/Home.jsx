@@ -8,7 +8,6 @@ import ChooseUs from '../components/home/ChooseUs'
 import Testimonials from '../components/home/Testimonials'
 import Faq from '../components/home/Faq'
 import Download from '../components/home/Download'
-import Footer from '../components/Footer'
 
 function Home() {
   return (
@@ -22,7 +21,6 @@ function Home() {
       <Testimonials />
       <Faq />
       <Download />
-      <Footer />
     </div>
   )
 }
