@@ -6,7 +6,7 @@ function ModalReg({modalReg, setModalReg}) {
     <div className={modalReg ? 'modal-reg active' : 'modal-reg'} onClick={() => setModalReg(false)}>
         <div className="container">
             <div className={modalReg ? 'content content-active' : 'content'} onClick={e => e.stopPropagation()}>
-              <h4 class="title">Register</h4>
+              <h4 className="title">Register</h4>
                   <form action="">
                       <div className="field">
                           <BiSolidUser size='19px'/>

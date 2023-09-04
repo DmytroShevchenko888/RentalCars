@@ -213,6 +213,10 @@ button {
     color: #ded9d9;
     transition: all 0.3s;
   }
+  .nav-bar .container .mobile-btn .closed {
+    position: fixed;
+    right: 40px;
+  }
   .nav-bar .container .mobile-btn:hover {
     color: #8A0E0C;
   }
@@ -361,6 +365,32 @@ button {
 }
 .book-car .container .content .book-content__box h2 {
   padding-bottom: 2rem;
+}
+.book-car .container .content .book-content__box .error-message {
+  width: 100%;
+  background-color: lightpink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+.book-car .container .content .book-content__box .error-message span {
+  cursor: pointer;
+}
+.book-car .container .content .book-content__box .booking-done {
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+.book-car .container .content .book-content__box .booking-done span {
+  cursor: pointer;
 }
 .book-car .container .content .book-content__box .box-form {
   display: grid;
@@ -1297,6 +1327,40 @@ button {
     flex-direction: column;
   }
 }
+.modal-book {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.modal-book .container .content {
+  padding: 4rem 2rem;
+  background: linear-gradient(9deg, rgb(47, 43, 43) 0%, rgb(84, 84, 87) 35%, rgb(25, 26, 27) 100%);
+  transform: scale(0.5);
+  transition: 0.4s all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+}
+.modal-book .container .content-active {
+  transform: scale(1);
+}
+
+.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .footer {
   background: rgb(58, 58, 58);
 }

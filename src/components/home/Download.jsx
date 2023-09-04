@@ -17,16 +17,16 @@ function Download() {
               <div className="download-btns">
                 <div className="btn-google">
                   <div className="download-icon"><BiLogoPlayStore className='icon'/></div>
-                  <span class="texts">
-                    <span class="text-1">GET IT ON</span>
-                    <span class="text-2">Google Play</span>
+                  <span className="texts">
+                    <span className="text-1">GET IT ON</span>
+                    <span className="text-2">Google Play</span>
                   </span>
                 </div>
                 <div className="btn-apple">
                   <div className="download-icon"><BiLogoApple className='icon'/></div>
-                  <span class="texts">
-                    <span class="text-1">GET IT ON</span>
-                    <span class="text-2">Apple Store</span>
+                  <span className="texts">
+                    <span className="text-1">GET IT ON</span>
+                    <span className="text-2">Apple Store</span>
                   </span>
                 </div>
               </div>

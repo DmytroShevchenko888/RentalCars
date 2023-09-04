@@ -132,6 +132,10 @@
                 z-index: 10;
                 color: $text-gray;
                 transition: all 0.3s;
+                .closed{
+                    position: fixed;
+                    right: 40px;
+                }
                 &:hover{
                     color: $text-red;
                 }

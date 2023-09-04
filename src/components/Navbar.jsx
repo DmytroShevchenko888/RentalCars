@@ -86,7 +86,7 @@ function Navbar() {
         </Link>
         
         <div onClick={openNav} className='mobile-btn'>
-          {!nav ? <FaBars/> : <FaTimes/>} 
+          {!nav ? <FaBars/> : <FaTimes className='closed' />} 
         </div> 
       </div> 
       <ModalReg modalReg={modalReg} setModalReg={setModalReg}/> 
